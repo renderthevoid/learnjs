@@ -7,8 +7,8 @@ console.log(ucFirst("вася"));
 
 ///5.3-2
 function checkSpam(str) {
-    let string = str.toLowerCase();
-    return string.includes("xxx") || string.includes("viagra");
+    let lowerStr = str.toLowerCase();
+    return lowerStr.includes("xxx") || lowerStr.includes("viagra");
 }
 console.log(checkSpam("xxx po"));
 console.log(checkSpam("viagra po"));
