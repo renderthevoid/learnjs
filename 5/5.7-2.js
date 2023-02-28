@@ -1,9 +1,9 @@
 function aclean(arr) {
     let map = new Map();
-    for (let word of arr) {
-        let destruct = word.toLowerCase().split("").sort().join("");
-        map.set(destruct, word);
-    }
+    arr.forEach(item => {
+        let destruct = item.toLowerCase().split("").sort().join("");
+        map.set(destruct, item);
+    });
     return Array.from(map.values());
 }
 
